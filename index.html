@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Rahuman Batcha - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  body {
+      font-family: Arial, sans-serif;
+  }
+  .tabs {
+      display: flex;
+      background: #333;
+      padding: 10px;
+      justify-content: space-around;
+      width:800px;
+      border-radius: 15px;
+  }
+  .tabs a{
+      color: white;
+      text-decoration: none; 
+  }
+  .tabs button {
+      color: white;
+      background: #555;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 5px;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  .tabs a:hover {
+      color: #20c997;
+  }
+  .tabs a.active {
+    border-bottom: 3px solid #20c997; 
+    transition: width 0.4s ease;
+}
+  /*.tabs button.active {
+      background: #777;
+  } */
+  .content {
+      display: none;
+      padding: 20px;
+      margin-top: 10px;
+  }
+
+  .content.active {
+      display: block;
+  }
+  .content h4,h5{
+    color:#20c997;
+  }
+  .content:hover{
+    border: 2px solid #20c997;
+    border-radius: 10px;
+  }
+</style>
+<body>
+  
+
+<nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Portfolio</a></div>
+      <ul class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+      </ul>
+    </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center" id="home">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        
+        <!-- Image with Circle Background -->
+        <div class="col-md-6 text-center">
+          <div class="image-container">
+            <div class="image-circle">
+              <img src="" alt="Profile Pic" class="profile-img">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 text-center text-md-start">
+          <h1>Hello, It's Me</h1>
+          <h2 class="fw-bold"><span class="highlighted">M</span>ohamed <span class="highlighted">R</span>ahuman <span class="highlighted">B</span>atcha A</h2>
+          <h3>And I'm a <span class="highlighted">Full Stack Developer!</span></h3>
+          <p>To showcase my expertise in full-stack development using Python through innovative projects, demonstrating technical proficiency and creativity.</p>
+          
+          <!-- Social Media Icons -->
+          <div class="social-icons my-4">
+            <a href="https://www.linkedin.com/in/mohamed-rahuman-batcha-a-331563268/" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/thowfik_thowfi/" class="social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="https://github.com/MdRahumanBatcha" class="social-icon"><i class="bi bi-github"></i></a>
+            <a hreh="#" class="social-icon"><i class="bi bi-file-pdf-fill"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+<section class="about-me d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Image with Circle Background -->
+        <div class="col-md-6 text-center">
+          <div class="about-image-container">
+            <div class="about-image-circle">
+              <img src="" alt="Profile Picture" class="profile-img-a">
+            </div>
+          </div>
+        </div>
+  
+        <!-- About Me Text Content -->
+        <div class="col-md-6" id="about">
+          <h2>About <span class="highlight">Me</span></h2>
+          <h3>Full Stack Developer!</h3>
+          <p>
+            Hi, I'm Mohamed Rahuman Batcha, a passionate full-Stack Developer with a keen interest in building dynamic and responsive web applications. I recently graduated with a degree in Information Technology from JP College of Arts & Science affiliated to Manonmaniam Sundaranar University. During my studies, I developed a strong foundation in both front-end and back-end technologies.  
+          </p>
+          <br> 
+          <p class="para">I possess strong proficiency in HTML, CSS, and JavaScript, coupled with extensive experience in frameworks like Django. My skill set is further complemented by practical knowledge of databases such as SQLite and MySQL. In a recent endeavor, I designed and developed a personal portfolio website to exhibit my projects and technical abilities. This project honed my expertise in creating responsive designs and optimizing user experience, reinforcing my capabilities as a versatile web developer.</p>
+  
+          <!-- Read More Button -->
+          <!-- <a href="#" class="btn btn-primary btn-shadow">Read More</a> -->
+        </div>
+      </div>
+    </div>
+</section>
+
+
+  <!-- My Services Section -->
+<section class="my-services py-5" id="projects">
+    <div class="container">
+      <h2 class="text-center mb-5">My <span class="highlight">Projects</span></h2>
+      <div class="row">
+        <!-- Service 1: Web Development -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card text-center p-4">
+            <div class="service-icon">
+              <i class="bi bi-book-half"></i>
+            </div>
+            <h3 class="service-title">InstituteHub</h3>
+            <p class="service-description">
+              A College Management web application automating college operations, featuring admin, teacher, and student logins, course management, attendance tracking, and administrative tasks. <b>Developed as an academic project with a three-member team.</b>
+              Tech Stack (Python, Django, MySQL, JS HTML & CSS)</p>
+            <a href="https://github.com/MdRahumanBatcha/Institute-Hub" class="btn btn-primary btn-shadow">View Code</a>
+          </div>
+        </div>
+  
+        <!-- Service 2: Graphic Design -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card text-center p-4">
+            <div class="service-icon">
+              <i class="bi bi-buildings-fill"></i>            
+            </div>
+            <h3 class="service-title">MRB Constructions</h3>
+            <p class="service-description">
+              This web-based Construction Management System is designed to streamline project tracking, service management, and document handling for a construction company. The application <b>features an admin dashboard with a user-friendly interface</b> for managing essential operations efficiently.
+              Tech Stack (HTML, CSS, JS, Python, Django, Rest API) 
+            </p>
+            <a href="https://github.com/MdRahumanBatcha/Full_Stack_Project" class="btn btn-primary btn-shadow">View Code</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card text-center p-4">
+            <div class="service-icon">
+              <i class="bi bi-database-fill"></i>
+            </div>
+            <h3 class="service-title">Academy Management</h3>
+            <p class="service-description">
+              The Academy Management System is a <b>MySQL-based database project</b> designed to streamline administrative tasks in educational institutions. It efficiently manages student records, faculty details, course enrollments, attendance tracking, and fee management through structured relational tables and optimized SQL queries.</p>
+            <a href="https://github.com/MdRahumanBatcha/Academy_Management" class="btn btn-primary btn-shadow">View Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- My Skills Section -->
+<section id="skills">  
+  <h2 class="text-center mb-5">My <span class="highlight">Credentials</span></h2>
+ 
+  <div class="tabs container">
+    <a href="#tab1" onclick="showTab('tab1')">Skills</a>
+    <a href="#tab2" onclick="showTab('tab2')">Certifications</a>
+    <a href="#tab3" onclick="showTab('tab3')">Education</a>
+  </div>
+<div id="tab1" class="content active service-card conatiner">
+  <div class="row">
+  <div class="col-6">
+        <h5>Programming Languages</h5>
+        <ul type="square"><li>Python</li></ul>
+        <h5>Front-End Development Technologies:</h5>
+        <ul type="square">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+        </ul>
+          <h5>Frameworks & APIs</h5>
+        <ul type="square"><li>Django</li>
+            <li>RESTful API</li></ul>
+  </div>
+  <div class="col-6">
+        <h5>Databases</h5>
+        <ul type="square">
+            <li>MySQL</li>
+            <li>MySQL Workbench</li>
+            <li>SQLite</li>
+        </ul>
+        <h5>Tools and Version Control</h5>
+        <ul type="square">
+            <li>Git & GitHub</li>
+            <li>VS Code & PyCharm</li>
+            <li>Postman</li>
+        </ul>
+  </div>
+  </div>
+</div>
+    <div id="tab2" class="content service-card">
+        <h4>Accomplishments</h4>
+        <ul type="square">
+          <li>Full-Stack developer Course with Internship from <i>Vinsup Infotech (p) Limited, Aykudi</i></li>
+          <li>Portfolio Creation using Front-End from <i>CADD Expert, Tenkasi</i></li>
+          <li>Communication with Impact Voice Process from <i>Atos Prayas Foundation - ICT Academy</i></li></ul>
+    </div>
+    <div id="tab3" class="content service-card">
+      <h4>Bachelors in Information Technology</h4>
+      <p>JP College of Arts and Science, Agarakattu, Tenkasi</p>  
+      <P>2021 - 2024 | CGPA : 7.5</P>
+      <h4>Higher Secondary Education</h4>
+      <p>RC Veeramamunivar Higher Secondary School, Keelapuliyur, Tenaksi</p>
+      <P>2020 - 2021 | Percentage : 78%</P>
+    </div>
+</section>
+
+  <!-- Contact Me Section -->
+<section id="contact">
+    <h2>Contact <span class="highlight">Me</span></h2>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <p><i class="bi bi-envelope-at-fill"></i> <a href="mailto:mdrahumanbatcha@gmail.com">mdrahumanbatcha@gmail.com</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- footer section -->
+<footer>
+  <div class="text">
+    <span>Created By <a href="#">Mohamed Rahuman Batcha</a> | &#169; 2025 All Rights Reserved</span>
+  </div>
+</footer>
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script>
+  function showTab(tabId) {
+      document.querySelectorAll('.content').forEach(tab => tab.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+
+      document.querySelectorAll('.tabs a').forEach(btn => btn.classList.remove('active'));
+      document.querySelector(`.tabs a[href="#${tabId}"]`).classList.add('active');
+  }
+</script>
+
+<!-- Bootstrap Icons for the arrow -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
