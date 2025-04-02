@@ -6,6 +6,7 @@ body, html {
     font-family: 'Arial', sans-serif;
     background-color: #000000; /*#021024;*/
     color: white;
+      font-family: Arial, sans-serif;
   }
   
 
@@ -227,7 +228,8 @@ nav {
     }
   
     .image-circle {
-      margin-top: 20px;
+      margin-top: 180px;
+      margin-bottom: 20px;
       width: 300px;
       height: 300px;
     }
@@ -332,9 +334,65 @@ nav {
     font-size: 1.2em;
     color: #ffffff;
   }
-  
-  
-  /* Media Queries */
+  .tabs {
+    display: flex;
+    background: #333;
+    padding: 10px;
+    justify-content: space-around;
+    width:800px;
+    border-radius: 15px;
+}
+.tabs a{
+    color: white;
+    text-decoration: none; 
+}
+.tabs button {
+    color: white;
+    background: #555;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tabs a:hover {
+    color: #20c997;
+}
+.tabs a.active {
+  border-bottom: 3px solid #20c997; 
+  transition: width 0.4s ease;
+}
+/*.tabs button.active {
+    background: #777;
+} */
+.content {
+    display: none;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.content.active {
+    display: block;
+}
+.content h4,h5{
+  color:#20c997;
+}
+.content:hover{
+  border: 2px solid #20c997;
+  border-radius: 10px;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  .tabs{
+    width:100%;
+  }
+  .content{
+    width:100%;
+  }
+}
+/*Skill Section Ends*/
+
+/* Media Queries */
   @media (max-width: 768px) {
     .about-me {
       text-align: center;
