@@ -177,7 +177,7 @@ nav {
   
   .social-icon:hover {
     /* color: #00e0ff; */
-    color:rgb(13 110 253)
+    color: #20c997;
   }
   
   /* Button */
@@ -190,7 +190,7 @@ nav {
   .btn-primary:hover {
     background-color: #20c997;
     border-color: #20c997;
-    box-shadow: 0 5px 25px rgba(0, 224, 255, 0.7);
+    box-shadow: 0 5px 15px #20c997;
   }
   
   /* Circle Image */
@@ -212,9 +212,9 @@ nav {
   }
   
   .profile-img {
-    width: 360px;
-    height: 360px;
-    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
     object-fit: cover;
     position: absolute;
     /* top: 50px; Adjusts the image's position within the circle */
@@ -233,8 +233,8 @@ nav {
     }
   
     .profile-img {
-      width: 280px;
-      height: 280px;
+      width: 300px;
+      height: 300px;
     }
   }
 
@@ -288,7 +288,7 @@ nav {
     object-fit: cover;
   }
   
-  /* Button */
+  /* Button 
   .btn-primary {
     background-color: #20c997;
     border-color: #20c997;
@@ -299,7 +299,7 @@ nav {
     background-color: #20c997;
     border-color: #20c997;
     box-shadow: 0 5px 25px rgba(0, 224, 255, 0.7);
-  }
+  }*/
 
   .skills {
     background-color: #000000;
@@ -390,7 +390,7 @@ nav {
   b{
     color: #20c997;
   }
-  /* Button */
+  /* Button 
   .btn-primary {
     background-color: #20c997;
     border-color: #20c997;
@@ -401,7 +401,7 @@ nav {
     background-color: #20c997;
     border-color: #20c997;
     box-shadow: 0 5px 25px rgba(0, 224, 255, 0.7);
-  }
+  }*/
 
   /* Footer Styling */
 footer {
