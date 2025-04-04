@@ -201,7 +201,7 @@ nav {
   
   .image-circle {
     width: 400px;
-    height: 380px;
+    height: 400px;
     background-color: #20c997;
     border-radius: 30px;
     display: flex;
@@ -228,8 +228,8 @@ nav {
     }
   
     .image-circle {
-      /* margin-top: 180px; */
-      /* margin-bottom: 20px; */
+      margin-top: 180px;
+      margin-bottom: 20px;
       width: 300px;
       height: 300px;
     }
